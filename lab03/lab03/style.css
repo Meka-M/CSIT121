@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(151, 20, 81);
+    color: rgb(238, 196, 82);
+}
+h1 {
+font-size: 2.5em;
+color: #0d8e93;
+text-align: center;
+font-weight: 900;
+}
+p {
+font-size: 1.4em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 600;
+}
+h2 {
+    font-size: 2em;
+    color: #a86410;
+    text-align: center;
+    font-weight: 700;
+    }
+h3 {
+    font-size: 2em;
+    color: #a86410;
+    text-align: center;
+    font-weight: 700;
+    }
+h4 {
+    font-size: 2em;
+    color: #a86410;
+    text-align: center;
+    font-weight: 700;
+    }
+h5 {
+    font-size: 2em;
+    color: #a86410;
+    text-align: center;
+    font-weight: 700;
+    }
+
+a:hover {
+    color: orangered;
+    }   
+
+ol {
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}   
+
+ul {
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+#reflection {
+    background-color: rgb(221, 0, 255);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.blink_text {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {opacity: 0;
+    }
+}
