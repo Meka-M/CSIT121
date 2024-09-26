@@ -1,0 +1,80 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    background: url(images/colorful.jpg);
+  }
+
+  header {
+      height: 150px;
+      border-style: groove;
+      border-width: 1em;
+      border-color: black;
+      padding: 1%;
+      color: #e2c112;
+      background: url(images/sparkles.jpg);
+      
+  }
+
+  main {
+      width: 90em;
+      background: orange;
+      border-style: groove;
+      border-width: 1em;
+      border-color: black;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    article {
+      padding: 2%;
+    }
+
+   img {
+    padding: 1em;
+    padding-left: 2.5em;
+    padding-right: 2em;
+   }
+
+   h1 {
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+   }
+
+   h2 {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration-line: underline;
+   }
+
+   h3 {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration-line: underline;
+   }
+
+   h4 {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration-line: underline;
+   }
+
+   h5 {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration-line: underline;
+   }
+
+   p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+
+   a:hover {
+    color: red;
+    }   
+
+    footer {
+        color: black;
+        background-color: orange;
+    }
