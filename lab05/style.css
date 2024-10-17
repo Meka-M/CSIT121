@@ -92,6 +92,7 @@ main {
     display: flex;
     margin: 10px;
     flex-direction: column;
+    width: auto;
 
 }
 
@@ -108,8 +109,9 @@ article {
     border-style: double;
     border-width: 20px;
     background-color: beige;
-    margin: 10px;
-    padding: 10px;
+    margin: 30px;
+    padding: 30px;
+    align-content: center;
 }
 
 @media (min-width: 1000px) {
