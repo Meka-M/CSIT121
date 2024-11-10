@@ -1,0 +1,137 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    background: url(images/colorful.jpg);
+  }
+
+  header {
+      height: 150px;
+      border-style: groove;
+      border-width: 1em;
+      border-color: black;
+      padding: 1%;
+      color: #e28b12;
+      background-color: rgba(0, 0, 0, 0.608);
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #e28b12;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
+  .overlay a:hover, .overlay a:focus {
+    color: red;
+  }
+  
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #e28b12;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  main {
+      width: 90em;
+      background: orange;
+      border-style: groove;
+      border-width: 1em;
+      border-color: black;
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+    }
+
+    article {
+      padding: 2%;
+    }
+
+   img {
+    padding: 1em;
+    padding-left: 2.5em;
+    padding-right: 2em;
+   }
+
+   h1 {
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+   }
+
+   h2 {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration-line: underline;
+   }
+
+   h3 {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration-line: underline;
+   }
+
+   h4 {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration-line: underline;
+   }
+
+   h5 {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration-line: underline;
+   }
+
+   p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+
+   a:hover {
+    color: red;
+    }   
+
+    footer {
+        color: black;
+        background-color: orange;
+    }
