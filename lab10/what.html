@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>What is it?</title>
+</head>
+<body>
+    <header>
+        <h1>What is it?</h1>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="main.html">Home</a>
+            <a href="what.html">What is it?</a>
+            <a href="why.html">Why is it important?</a>
+            <a href="how.html">How is it used?</a>
+            <a href="source.html">Sources</a>
+          </div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+          <h2>What is Subresource Integrity?</h2>
+          <p>Subresource Integrity (SRI) is a safety measure that browsers use to make sure that any information it is asked to get is actually what it is supposed to be. It became a recommendation by W3C on June 23, 2016. This layer of protection falls within the scope of cybersecurity. This can help lead to less cyberattacks because cryptographic hash functions are used. That hash has to be matched to the other resource in order for it to be loaded.
+          <br>
+          <br>
+          There are several hash algorithms that can be used, which are SHA-256, SHA-512, and SHA-384, SHA-2. MD5 and SHA-1 are frowned upon since they are known to be weaker hashing functions. Also, there is a thing called integrity metadata, which is needed to validate the integrity of any response. The three of them are known as cryptographic hash function, digest, and options.
+          <br>
+          <br>
+          Even though HTTPS is used to secure websites, it does not help against potential attacks that are sent while data is in transit. Also, attackers could even change the outcome that the hash is supposed to be used to help validate. This is why this Web Standard is so important to implement when needed to load anything that comes from a third-party service, like Content Delivery Networks (CDN). This is why it is asked that integrity metadata is sent to a secured website that uses HTTPS, not a non-secured website, HTTP.</p>
+        </article>
+    </main>
+     
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+</html>

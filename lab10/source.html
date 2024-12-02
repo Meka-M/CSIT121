@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Sources</title>
+</head>
+<body>
+    <header>
+        <h1>Sources</h1>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="main.html">Home</a>
+            <a href="what.html">What is it?</a>
+            <a href="why.html">Why is it important?</a>
+            <a href="how.html">How is it used?</a>
+            <a href="source.html">Sources</a>
+          </div>
+        </div>
+    </header>
+
+    <main>
+      <article>
+        <h2>References</h2>
+        <ul>
+          <li><a href="https://www.invicti.com/blog/web-security/subresource-integrity-sri-security/">Abela, R. (2016, June 29). What is Subresource Integrity (SRI)? Invicti. https://www.invicti.com/blog/web-security/subresource-integrity-sri-security/</a></li>
+          <li><a href="https://www.w3.org/TR/SRI/#introduction">Akhawe, D., Braun, B., Marier, F., & Weinberger, J. (Eds.). (2016, June 23). Subresource Integrity. W3.org. https://www.w3.org/TR/SRI/#introduction</a></li>
+          <li><a href="https://frederikbraun.de/using-subresource-integrity.html">Braun, F. (2015, July 19). A CDN that can not XSS you: Using Subresource Integrity. Frederik Braun. https://frederikbraun.de/using-subresource-integrity.html</a></li>
+          <li><a href="https://library.fiveable.me/key-terms/cybersecurity-and-cryptography/subresource-integrity-sri">Fiveable. (n.d.). Subresource Integrity (SRI) - (Cybersecurity and Cryptography) - Vocab, Definition, Explanations | Fiveable. Fiveable.me. https://library.fiveable.me/key-terms/cybersecurity-and-cryptography/subresource-integrity-sri</a></li>
+          <li><a href="https://css-tricks.com/securing-your-website-with-subresource-integrity/">McMillian, K. (2021, June 14). Securing Your Website With Subresource Integrity. CSS-Tricks. https://css-tricks.com/securing-your-website-with-subresource-integrity/</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">MDN. (n.d.). Subresource Integrity - Web security | MDN. Developer.mozilla.org. https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</a></li>
+        </ul>
+      </article>
+    </main>
+     
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+</html>

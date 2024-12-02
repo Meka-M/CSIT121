@@ -1,0 +1,108 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-size: cover;
+    background: url(images/cybersecurity-policy-1024x683.jpg);
+}
+
+header {
+    height: 150px;
+    border-style: double;
+    border-width: 1em;
+    border-color: black;
+    padding: 1%;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.759);
+}
+
+h2 {
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.759);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+  
+.overlay a:hover, ul li a:hover, .overlay a:focus {
+    color: rgb(0, 2, 121);
+}
+  
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+  
+span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+article p, ul {
+    color: rgb(0, 0, 0);
+    border-style: double;
+    border-width: 0.5em;
+    border-color: black;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.759);
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+
+
+@media screen and (max-height: 450px), screen and (max-width: 780px) {
+    .overlay a {font-size: 30px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+    header {
+        height: auto;
+        text-align: center;
+    }
+    h1, h2 {
+        font-size: 1.5em;
+    }
+    article p, ul {
+        font-size: 1.5em;
+    }
+}
+
+footer {
+    color: white;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Why is it important?</title>
+</head>
+<body>
+    <header>
+        <h1>Why is it Important?</h1>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="main.html">Home</a>
+            <a href="what.html">What is it?</a>
+            <a href="why.html">Why is it important?</a>
+            <a href="how.html">How is it used?</a>
+            <a href="source.html">Sources</a>
+          </div>
+        </div>
+    </header>
+
+    <main>
+      <article>
+        <h2>Why Subresource Integrity is important</h2>
+        <p>The importance of Subresource Integrity is substantial and without it, your site will be vulnerable, even with using HTTPS. Because some sites use a third-party service, if that third party service gets attacked, your website will also. By that happening, that file can be changed which will cause your website to have a cross-site scripting vulnerability. But, when the source origins and the content integrity is vetted, this vulnerability would not be an issue.
+        <br>
+        <br>
+        Looking at the performance aspect, not just the security side, when using Subresource Integrity, the performance is better for any user. You do not have to worry about things being harmful. But it could take some time to verify the hashes during the loading period. Users will have trust on the website, and will come back more frequently knowing that even though that website is using third-party services, they will not have to worry about harmful scripts.
+        <br>
+        <br>
+        When you use Subresource Integrity, you are making sure that if something goes array, your website will not load the new information. In cybersecurity, this is known as a mitigation tactic. By using it, you are actively making sure that when an issue arises, you will not have to feel the blowback of it because you took the necessary steps to safeguard your website. All of these reasons are why the Web Standard, Subresource Integrity, is important to implement.</p>
+      </article>
+    </main>
+     
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+</html>

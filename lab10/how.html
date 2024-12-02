@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>How is it Used?</title>
+</head>
+<body>
+    <header>
+        <h1>How is it Used?</h1>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="main.html">Home</a>
+            <a href="what.html">What is it?</a>
+            <a href="why.html">Why is it important?</a>
+            <a href="how.html">How is it used?</a>
+            <a href="source.html">Sources</a>
+          </div>
+        </div>
+    </header>
+
+    <main>
+      <article>
+        <h2>How Subresource Integrity is Used</h2>
+        <p>You will use SRI by starting with a cryptographic hash that is base64-encoded. While doing so, you will be using the integrity attribute, a link element, or script element, that will be used along with rel=“stylesheet” or something else like rel=“preload.” The integrity value will have a prefix before the hash. Also, the use of the crossorigin attribute will lead to the prevention of cross-origin attacks. An example would look like: sha256-2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824. 
+        <br>
+        <br>
+        There are plenty of hash generators that you can find online also to make one that is linked to a URL. So, when looking at the script element, you want to add the src attribute first to place the script. Then, you will place that hash with the prefix within the integrity attribute. Finally, you will end it with a cross-origin attribute and a closed script tag. An example would be: opening script src=https://website.com/website-framework.js integrity=sha256- 2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824 crossorigin=anonymous closing script. 
+        <br>
+        <br>
+        As for the link element, you are focusing on the stylesheet. So, with this one, you want to start with the link element. Within it, you will use the rel attribute and also place the link. The integrity attribute is also within that element, and you will wrap it up with the crossorigin attribute. The example for this one would be: “ opening link rel=stylesheet href=https://website.com/style.css integrity=sha256- 2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824 crossorigin=anonymous closing tag.</p>
+      </article>
+    </main>
+     
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+</html>
