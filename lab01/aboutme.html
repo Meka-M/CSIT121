@@ -2,10 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     <title>Lab 01: Student Bio</title>
 </head>
 <body>
     <header>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="main.html">Home</a>
+            <a href="https://meka-m.github.io/CSIT121/lab01.html">Web Publishing</a>
+            <a href="lab02.html">HTML Basics</a>
+            <a href="lab03.html">CSS Basics</a>
+            <a href="lab04.html">Visual Media Lab</a>
+            <a href="lab05.html">Layout Lab</a>
+            <a href="lab06.html">UI/UX Evaluation</a>
+            <a href="lab07.html">Table and Form Lab</a>
+            <a href="lab08.html">Interactive Menu</a>
+            <a href="lab09.html">XML</a>
+            <a href="lab10.html">Standards Presentation</a>
+            <a href="LL.html">Lessons Learned</a>
+          </div>
+        </div>
         <h1>Lab 01: Student Bio</h1>
     </header>
     <main>
@@ -38,9 +58,17 @@
 
             </p>
         </section>
-    </main>
-    <footer>
-        <p>© 2024 Student in CSIT 121</p>
-    </footer>
+        <script>
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+<footer>
+    <p>© 2024 Student in CSIT 121</p>
+</footer>
 </body>
 </html>
