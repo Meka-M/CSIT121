@@ -9,9 +9,26 @@ html {
       border-width: 1em;
       border-color: black;
       padding: 1%;
-      color: #e2c112;
-      background: url(images/sparkles.jpg);
-      
+      color: #e28b12;
+      background-color: rgba(0, 0, 0, 0.608);
+  }
+
+  nav ul li a {
+    color: #e28b12;
+    font-size: 2em;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  nav ul {
+    margin: 15px;
+    padding: 0; 
+    text-decoration-line: underline;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
   }
 
   main {
