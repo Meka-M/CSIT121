@@ -1,12 +1,16 @@
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-size: cover;
+    background-image: url(images/christmasbeige.jpg);
 }
 
 img {
     width: 100%;
     height: auto;
     max-width: 900px;
+    display: block;
+    margin: 20px auto;
+    width: 100%;
 }
 
 .image {
@@ -14,6 +18,40 @@ img {
     display: flex;
     padding: 20px;
     margin: 5px;
+    max-width: 100%;
+}
+
+h1 {
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2, h3, h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    list-style-type: none;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+article ul {
+    font-size: 1.5em;
+}
+
+.highlight {
+    color:rgb(116, 66, 12);
 }
 
 .overlay {
@@ -23,7 +61,7 @@ img {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.759);
+    background-color: rgba(139, 104, 54, 0.825);
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -66,15 +104,54 @@ span {
     color: rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 780px) {
+.content-table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 1em;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.content-table thead tr {
+    background-color: rgba(173, 183, 183, 0.559);
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.content-table th, .content-table td {
+    padding: 15px 25px;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+@media screen and (max-width: 900px), screen and (max-width: 780px) {
+    .content-table {
+        max-width: 100%;
+    }
+    .content-table th, .content-table td {
+        padding: 5px;
+    }
     .overlay a {font-size: 30px}
+    p {
+        max-width: 100%;
+    }
     .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
+        font-size: 30px;
+        top: 15px;
+        right: 35px;
     }
 }
 
 footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
+}
+
+footer p {
+    text-align: left;
 }
